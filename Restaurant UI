@@ -1,0 +1,149 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sravan gorantla</title>
+  <link rel="stylesheet" href="client.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1 class="logo">Gourmet Haven</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h2>Welcome to sravan Haven</h1></h2>
+      <p>Delicious meals, unforgettable moments.</p>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>We blend culinary art with fresh ingredients to bring you the most delightful dishes. At Gourmet Haven, every plate tells a story.</p>
+  </section>
+
+  <section id="menu" class="section menu">
+    <h2>Our Menu</h2>
+    <ul>
+      <li><strong>Grilled Salmon</strong> – ₹450</li>
+      <li><strong>Chicken Alfredo Pasta</strong> – ₹380</li>
+      <li><strong>Spicy Paneer Tikka</strong> – ₹300</li>
+      <li><strong>Chocolate Lava Cake</strong> – ₹180</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@gourmethaven.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: 123 Foodie Street, Hyderabad, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gourmet Haven. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fbc531;
+}
+
+.hero-text {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about, .contact {
+  background-color: #ffffff;
+}
+
+.menu {
+  background-color: #f0f0f0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
